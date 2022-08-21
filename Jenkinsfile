@@ -3,8 +3,8 @@ pipeline {
 
     agent { label 'RaspberryPi_MasterNode' }
     tools {
-        maven 'Maven 3.6.3 Rasp'
-        jdk 'Java11 (openjdk) ARM'
+        maven 'Maven 3.8.6'
+        jdk 'Java17 ARM'
     }
 
     options { buildDiscarder(logRotator(numToKeepStr: '3', artifactNumToKeepStr: '1')) }
