@@ -38,7 +38,7 @@ pipeline {
             steps {
                 echo 'Delivering artifact to remote server...'
                 sshagent(['jenkinsAWSssh']) {
-                    sh 'scp -v -o "StrictHostKeyChecking=no" ./target/*.jar ubuntu@enumerable-entity.host:/home/ubuntu/app/shorty'
+                    sh 'scp -v -o "StrictHostKeyChecking=no" ./target/*.jar ubuntu@enumerable-entity.host:/home/ubuntu/app/easymenu'
                 }
             }
         }
@@ -48,7 +48,7 @@ pipeline {
                     echo 'Deploying...'
                     sshagent(credentials: ['jenkinsAWSssh']) {
                         sh """ ssh ubuntu@enumerable-entity.host << EOF
-                                          cd app/shorty
+                                          cd app/easymenu
                                           docker-compose restart
                                           exit
                                           EOF
