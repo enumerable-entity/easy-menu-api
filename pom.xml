@@ -5,13 +5,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0-M4</version>
+        <version>2.7.3</version>
         <relativePath/>
     </parent>
     <groupId>com.enumerable-entity</groupId>
     <artifactId>easymenu</artifactId>
     <version>0.0.1</version>
-    <name>Easy Menu</name>
+    <name>Easy_Menu</name>
     <description>Qr menu API</description>
     <properties>
         <java.version>17</java.version>
@@ -111,16 +111,6 @@
                     </plugin>
                 </plugins>
             </build>
-            <repositories>
-                <repository>
-                    <id>spring-milestones</id>
-                    <name>Spring Milestones</name>
-                    <url>https://repo.spring.io/milestone</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
             <pluginRepositories>
                 <pluginRepository>
                     <id>spring-milestones</id>
