@@ -1,6 +1,6 @@
 .idea
 .mvn
-.target
+target
 easymenu.iml
 mvnw
 mvnw.bat
